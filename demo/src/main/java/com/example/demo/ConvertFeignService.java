@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient(name="distanceunit-repository")
 public interface ConvertFeignService {
 	
-	@RequestMapping(value="/{from}/to/{to}",method=RequestMethod.GET)
+	@RequestMapping(value="/api/convert/{from}/to/{to}",method=RequestMethod.GET)
     public Double convert(@RequestParam Double unit, @PathVariable String from, @PathVariable String to);
    
 }
