@@ -13,7 +13,7 @@ import com.example.entity.*;
 @FeignClient(name="speedresult-repository")
 public interface CrudFeignService {
 	
-	@RequestMapping(value="api/speedresult/save",method=RequestMethod.POST)
+	@RequestMapping(value="api/SpeedResult/save",method=RequestMethod.POST)
 	String save(@RequestBody SpeedResult speedresult);
 	
 	@RequestMapping(value = "api/speedresult/{name}",method=RequestMethod.GET)
